@@ -77,7 +77,7 @@ func imetprint(_ img: CIImage) -> IO<Void> {
     print("height: \( height )")
     print("content headroom: \( img.contentHeadroom )")
     print("opaque: \( img.isOpaque )")
-    let color: String = img.colorSpace.map{ "\( $0 )"} ?? ""
+    let color: String = img.colorSpace.map { "\( $0 )" } ?? ""
     print("color: \( color )")
     for (key, val) in img.properties {
       print("property \( key ): \( val )")
